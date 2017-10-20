@@ -28,9 +28,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
-  },
+  // localDiskDb: {
+  //   adapter: 'sails-disk'
+  // },
 
   /***************************************************************************
   *                                                                          *
@@ -74,13 +74,13 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  // somePostgresqlServer: {
-  //   adapter: 'sails-postgresql',
-  //   host: 'YOUR_POSTGRES_SERVER_HOSTNAME_OR_IP_ADDRESS',
-  //   user: 'YOUR_POSTGRES_USER', // optional
-  //   password: 'YOUR_POSTGRES_PASSWORD', // optional
-  //   database: 'YOUR_POSTGRES_DB' //optional
-  // }
+  somePostgresqlServer: {
+    adapter: 'sails-postgresql',
+    host: 'postgres://udcfwyaajszbqo:77380e44754bd8b42fcb90f5dbfa3191d289e98f67a797aebbdc80d2bf670dd9@ec2-54-235-90-125.compute-1.amazonaws.com:5432/de9reu22qd05je',
+    // user: 'YOUR_POSTGRES_USER', // optional
+    // password: 'YOUR_POSTGRES_PASSWORD', // optional
+    database: 'postgresql-encircled-24457' //optional
+  }
 
 
   /***************************************************************************
