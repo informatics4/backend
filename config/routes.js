@@ -65,4 +65,9 @@ module.exports.routes = {
   'get /api/v1/rooms' : 'RoomsController.find',
   'get /api/v1/rooms/:id' : 'RoomsController.findOne',
   'post /api/v1/rooms' : 'RoomsController.create',
+
+  'get /api/v1/emails/staff/:email' : 'AlarmsController.sendNotificationToStaff',
+  'get /api/v1/emails/student/:email' : 'AlarmsController.sendNotificationToStudents',
+  'get /api/v1/emails/security/:email' : 'AlarmsController.sendNotificationToSecurity',
+
 };

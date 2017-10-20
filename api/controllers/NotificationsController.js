@@ -6,13 +6,6 @@
  */
 
 module.exports = {
-	case : {
-        type : 'string'
-    },
-
-    notify : {
-        enum : ['staff', 'students', 'school', 'security', 'guardian', 'all'],
-        defaultsTo : 'security'
-    }
+	
 };
 
