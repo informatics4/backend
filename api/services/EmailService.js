@@ -8,7 +8,10 @@ module.exports = {
                 to: email,
                 subject: "Securoty warning in the university of strathmore"
             }, 
-            function(err) {console.log(err || "sent mail!");}
+            function(err) {
+                console.log(err || "sent mail!");
+                next(email)
+            }
         )
     }
 }

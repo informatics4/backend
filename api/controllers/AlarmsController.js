@@ -14,13 +14,17 @@ module.exports = {
         });
     },
     sendNotificationToStudents : function(req,res){
-        EmailService.sendEmail(function(){
+        var email = (req.params.email) ? req.params.email : undefined
+        EmailService.sendEmail(email,function(){
             console.log("good")
+            res.json(200,{action : 'complete'})
         });
     },
     sendNotificationToSecurity : function(req,res){
-        EmailService.sendEmail(function(){
+        var email = (req.params.email) ? req.params.email : undefined
+        EmailService.sendEmail(email,function(){
             console.log("good")
+            res.json(200,{action : 'complete'})
         });
     },
     sendNotificationToExternalSecurity : function(req,res){},

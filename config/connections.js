@@ -56,14 +56,11 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  // someMongodbServer: {
-  //   adapter: 'sails-mongo',
-  //   host: 'localhost',
-  //   port: 27017,
-  //   user: 'username', //optional
-  //   password: 'password', //optional
-  //   database: 'your_mongo_db_name_here' //optional
-  // },
+  someMongodbServer: {
+    adapter: 'sails-mongo',
+    port: 27017,
+    url : "mongodb://brianphiri:brianphiri@ds161471.mlab.com:61471/beaumaris"
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -74,13 +71,13 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  somePostgresqlServer: {
-    adapter: 'sails-postgresql',
-    host: 'postgres://udcfwyaajszbqo:77380e44754bd8b42fcb90f5dbfa3191d289e98f67a797aebbdc80d2bf670dd9@ec2-54-235-90-125.compute-1.amazonaws.com:5432/de9reu22qd05je',
-    // user: 'YOUR_POSTGRES_USER', // optional
-    // password: 'YOUR_POSTGRES_PASSWORD', // optional
-    database: 'postgresql-encircled-24457' //optional
-  }
+  // somePostgresqlServer: {
+  //   adapter: 'sails-postgresql',
+  //   host: 'postgres://udcfwyaajszbqo:77380e44754bd8b42fcb90f5dbfa3191d289e98f67a797aebbdc80d2bf670dd9@ec2-54-235-90-125.compute-1.amazonaws.com:5432/de9reu22qd05je',
+  //   // user: 'YOUR_POSTGRES_USER', // optional
+  //   // password: 'YOUR_POSTGRES_PASSWORD', // optional
+  //   database: 'postgresql-encircled-24457' //optional
+  // }
 
 
   /***************************************************************************

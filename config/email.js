@@ -1,5 +1,5 @@
 module.exports.email = {
     service: 'Gmail',
-    auth: {user: 'brian.playground@gmail.com', pass: 'programmingA11Day'},
-    testMode: false
+    auth: {user: 'brian.playground@gmail.com', pass: ''},
+    testMode: true
 }
